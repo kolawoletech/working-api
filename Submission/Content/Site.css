@@ -3075,12 +3075,14 @@ body {
 }
 
 a {
-    color: #4fbfa8;
+    color: rgba(220, 53, 69, 1);
     text-decoration: none;
 }
-
+.underlined {
+    text-decoration: underline;
+}
     a:focus, a:hover {
-        color: #348e7b;
+        color: red;
         text-decoration: underline;
     }
 

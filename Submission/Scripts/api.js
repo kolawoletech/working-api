@@ -37,7 +37,7 @@
                     Output += '<div class="overlay d-flex align-items-center justify-content-center"></div >';
                     Output += '</div>'
                     Output += '<div id="viewDetails" class="text">';
-                    Output += '<h2 class="movieTitle">' + movies[index].Title + '</h2>';
+                    Output += '<h2 class="movieTitle underlined">' + movies[index].Title + '</h2>';
                     Output += '<h3>' + movies[index].Type + ' Released in ' + movies[index].Year + '</h3>';
 
                     Output += '</div></div></div><hr />';
@@ -108,18 +108,18 @@
                     Output2 += '<p class="price">Released : ' + movie.Released + '</p>'
                     Output2 += '<p class="price">Rating : ' + movie.imdbRating + '</p>'
                     Output2 += '<p class="text-center">'
-                    Output2 += '<button  onClick="addToCollection2()" type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to Collection</button>'
-                    Output2 += '<button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-default"><i class="fa fa-heart-o"></i></button>'
+                    Output2 += '<button  onClick="addToCollection2()" type="submit" class="btn btn-template-outlined btn-lg btn-danger"><i class="fa fa-shopping-cart"></i> Add to Collection</button>'
+                    Output2 += '<button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-warning btn-lg"><i class="fa fa-heart-o"></i></button>'
                     Output2 += '</p>'
                     Output2 += '</form>'
                     Output2 += '</div></div></div>'
                     Output2 += '<div id="details" class="box mb-4 mt-4">'
-                    Output2 += '<h4>Actors</h4>'
-                    Output2 += '<p>' + movie.Actors + '</p>'
-                    Output2 += '<h4>Genre</h4>'
-                    Output2 += '<p>' + movie.Genre + '</p>'
-                    Output2 += '<h4>Writer(s)</h4>'
-                    Output2 += '<p> ' + movie.Writer + '</p>'
+                    Output2 += '<h2>Actors</h2>'
+                    Output2 += '<h3>' + movie.Actors + '</h3>'
+                    Output2 += '<h2>Genre</h2>'
+                    Output2 += '<h3>' + movie.Genre + '</h3>'
+                    Output2 += '<h2>Writer(s)</h2>'
+                    Output2 += '<h4> ' + movie.Writer + '</h4>'
                     Output2 += '<blockquote class="blockquote"><p class="mb-0"><em>' + movie.Plot + '</em ></p ></blockquote > '
                     Output2 += '</div>'
                     Output2 += '<div id="product-social" class="box social text-center mb-5 mt-5">'
