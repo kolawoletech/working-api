@@ -37,8 +37,8 @@
                     Output += '<div class="overlay d-flex align-items-center justify-content-center"></div >';
                     Output += '</div>'
                     Output += '<div id="viewDetails" class="text">';
-                    Output += '<h4 class="movieTitle">' + movies[index].Title + '</h4>';
-                    Output += '<p class="author-category">' + movies[index].Type + ' Released in ' + movies[index].Year + '</p>';
+                    Output += '<h2 class="movieTitle">' + movies[index].Title + '</h2>';
+                    Output += '<h3>' + movies[index].Type + ' Released in ' + movies[index].Year + '</h3>';
 
                     Output += '</div></div></div><hr />';
                 });

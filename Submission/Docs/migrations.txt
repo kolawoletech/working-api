@@ -1,7 +1,10 @@
 ﻿enable-migrations -ContextTypeName  MovieCollectionContext -MigrationsDirectory Migrations\Movies
 for once
 
-add-migration -ConfigurationTypeName Submission.Migrations.Movies "InitialCreate"
+add-migration -ConfigurationTypeName Submission.Migrations.Movies.Configuration "InitialCreate"
 whenever mode changes
-
+update-database -ConfigurationTypeName Submission.Migrations.Movies.Configuration
 ===============================ApplicaDbContext===========================================
+enable-migrations -ContextTypeName  ApplicationDbContext -MigrationsDirectory Migrations\Identity
+add-migration -ConfigurationTypeName Submission.Migrations.Identity.Configuration "InitialIdentity"
+update-database -ConfigurationTypeName Submission.Migrations.Identity.Configuration
