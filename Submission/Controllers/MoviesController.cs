@@ -10,6 +10,7 @@ using Submission.Models;
 
 namespace Submission.Controllers
 {
+    [Authorize]
     public class MoviesController : Controller
     {
         private MovieCollectionContext db = new MovieCollectionContext();

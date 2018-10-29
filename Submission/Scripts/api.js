@@ -37,7 +37,7 @@
                     Output += '<div class="overlay d-flex align-items-center justify-content-center"></div >';
                     Output += '</div>'
                     Output += '<div id="viewDetails" class="text">';
-                    Output += '<h2 class="movieTitle underlined">' + movies[index].Title + '</h2>';
+                    Output += '<h3 class="movieTitle underlined">' + movies[index].Title + '</h3>';
                     Output += '<h3>' + movies[index].Type + ' Released in ' + movies[index].Year + '</h3>';
 
                     Output += '</div></div></div><hr />';

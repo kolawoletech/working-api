@@ -143,7 +143,7 @@ p.lead {
 }
 
 .text-sm, .form-group label, #blog-listing-big .date-comments a, #blog-listing-medium .date-comments a, #blog-listing-big p.intro, #blog-listing-medium p.intro {
-    font-size: 0.9rem;
+    font-size: 1.9rem;
 }
 
 .text-xs {
@@ -1833,7 +1833,8 @@ navbar-inverse {
 }
 
     .goToDescription a {
-        color: #999;
+        color: darkred;
+        font-size: 14px;
         text-decoration: underline;
     }
 
@@ -1846,7 +1847,7 @@ table tr td {
 }
 
 #customer-orders table {
-    font-size: 0.9rem;
+    font-size: 1.9rem;
 }
 
 #customer-orders th {
@@ -3075,6 +3076,16 @@ body {
 }
 
 a {
+    color: rgba(220, 53, 69, 1);
+    text-decoration: none;
+}
+
+.scroll-to {
+    color: rgba(220, 53, 69, 1);
+    text-decoration: none;
+}
+
+.scroll-to:hover, .scroll-to:focus {
     color: rgba(220, 53, 69, 1);
     text-decoration: none;
 }
