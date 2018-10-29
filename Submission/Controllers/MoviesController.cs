@@ -59,6 +59,20 @@ namespace Submission.Controllers
             return View(movie);
         }
 
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateAjax([Bind(Include = "MovieId,Title,Plot,Genre,Rating,Actors,Favorited")] Movie movie)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Movies.Add(movie);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(movie);
+        }
         // GET: Movies/Edit/5
         public ActionResult Edit(int? id)
         {
