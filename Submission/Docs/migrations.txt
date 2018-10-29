@@ -1,0 +1,7 @@
+﻿enable-migrations -ContextTypeName  MovieCollectionContext -MigrationsDirectory Migrations\Movies
+for once
+
+add-migration -ConfigurationTypeName Submission.Migrations.Movies "InitialCreate"
+whenever mode changes
+
+===============================ApplicaDbContext===========================================
